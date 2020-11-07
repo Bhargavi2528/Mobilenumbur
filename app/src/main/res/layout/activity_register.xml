@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/WhiteActionBar"
+        app:popupTheme="@style/MenuStyle" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/reg_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/reg_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+         <com.hbb20.CountryCodePicker
+          android:id="@+id/County_code_picker"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+             android:layout_below="@id/reg_text"
+             android:layout_marginTop="60dp">
+
+         </com.hbb20.CountryCodePicker>
+
+
+        <EditText
+          android:id="@+id/Mobileno"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+            android:layout_below="@id/reg_text"
+            android:layout_marginTop="59dp"
+            android:layout_toEndOf="@id/County_code_picker"
+            android:autofillHints=""
+          android:hint="@string/enter_phone_number"
+          android:inputType="number" />
+
+        <TextView
+            android:id="@+id/reg_text_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mobileno"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="@string/reg_text_two"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_text_two"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/next"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

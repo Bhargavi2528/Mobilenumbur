@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".varification">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/verification_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/WhiteActionBar"
+        app:popupTheme="@style/MenuStyle" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verification_toolbar"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/ver_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ver_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ver_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ver_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wrong_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:clickable="true"
+                android:text="@string/wrong_number"
+                android:textColor="@android:color/holo_blue_dark"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_verification_code"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ver_phone_layout"
+            android:maxLength="6"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_verification_code"
+            android:layout_centerHorizontal="true"
+            android:text="@string/verification_code"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/edt_verification_code"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:text="@string/verify"
+            android:layout_marginTop="90dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

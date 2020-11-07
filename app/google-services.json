@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "422878050093",
+    "firebase_url": "https://mobilenumbur-f8e25.firebaseio.com",
+    "project_id": "mobilenumbur-f8e25",
+    "storage_bucket": "mobilenumbur-f8e25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422878050093:android:327cc9ae18b9913471c5a4",
+        "android_client_info": {
+          "package_name": "com.example.mobilenumbur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422878050093-0b936gmabnnus8birmtg854buroiahe2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilenumbur",
+            "certificate_hash": "a978d404ca1142de883ff4377d2a21ed8609e3e3"
+          }
+        },
+        {
+          "client_id": "422878050093-5o74fr89lpfsog6fvv0lpj3hucoqh41b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu6K6uCHpGNyYJRkgylRg5MLFFBoJTNK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422878050093-5o74fr89lpfsog6fvv0lpj3hucoqh41b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

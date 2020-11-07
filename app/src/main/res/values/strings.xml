@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mobilenumber</string>
+    <string name="reg_text_two"> we will send you verification code to verify your mobile number. </string>
+    <string name="reg_text" > please confirm your country code and enter your mobile number. </string>
+    <string name="ver_text" > enter a verification code which is send you in your mobile device manager. </string>
+    <string name="phone_number" > mobile number </string>
+    <string name="wrong_number" > wrong number </string>
+    <string name="verification_code" > enter 6-digit verification code. </string>
+    <string name="verify" > verify </string>
+    <string name="detail_text" > please provide your name and profile picture </string>
+    <string name="type_you_name_here" > type your name here </string>
+    <string name="next" > next </string>
+    <string name="enter_phone_number">enter_your_number</string>
+    <string name="enter_your_email_address"> enter your email id here</string>
+</resources>
