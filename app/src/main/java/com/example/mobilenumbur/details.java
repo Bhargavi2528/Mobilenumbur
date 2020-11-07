@@ -48,13 +48,15 @@ public class details extends AppCompatActivity {
         email = (EditText) findViewById(R.id.email);
         mobilenumber = (EditText) findViewById(R.id.mobilenumber);
 
+
+
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (nickname != null) {
-                    storeDetails(sNickname, phoneNo);
+                    storeDetails(sNickname, phoneNo,email);
                 } else {
                     Toast.makeText(details.this, "Please Enter Nick name", Toast.LENGTH_SHORT).show();
                 }
@@ -63,8 +65,8 @@ public class details extends AppCompatActivity {
 
     }
 
-    private void storeDetails(String username, String phoneNumber) {
-        String stringemail = email.getText().toString();
+    private void storeDetails(String username, String phoneNumber, EditText email) {
+        String stringemail = this.email.getText().toString();
         String stringmobilenumber = mobilenumber.getText().toString();
         String userId = firebaseUser.getUid();
         phoneNo = firebaseUser.getPhoneNumber();
@@ -82,8 +84,12 @@ public class details extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
 
+                            Intent intent = new Intent(details.this, HomeActivity.class);
 
-                        Toast.makeText(details.this, "Finish", Toast.LENGTH_SHORT).show();
+                            startActivity(intent);
+                            finish();
+
+
                     }
                 });
     }
